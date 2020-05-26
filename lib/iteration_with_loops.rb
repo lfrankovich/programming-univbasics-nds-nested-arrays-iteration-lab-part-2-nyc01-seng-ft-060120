@@ -5,7 +5,9 @@ while row_index < src.count do
       element_index = 0
       longest_string_element = ""
         while element_index < src[row_index].count do
- 
+   while count < array.length do
+    if max_value < array[count]
+      max_value = array[count]
     # Array at row_index
     # Element of the inner array at element_index
     # If the length of the current element is greater than the length of longest_string_element
@@ -21,4 +23,19 @@ while row_index < src.count do
   outer_results << longest_string_element
   row_index += 1
  end
+end
+
+
+
+
+def find_max_value(array)
+  count = 0
+  max_value = -1
+  while count < array.length do
+    if max_value < array[count]
+      max_value = array[count]
+    end
+    count += 1
+  end
+  max_value
 end
